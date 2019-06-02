@@ -1,8 +1,8 @@
 # Frame 
-###chatClient1 pack()  method
+### chatClient1 pack()  method
 *Causes this Window to be sized to fit the preferred size and layouts of its subcomponents.*
 
-###chatClient2 
+### chatClient2 
 *This version, may close the window*
 
 ```java
