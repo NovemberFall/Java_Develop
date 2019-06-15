@@ -82,3 +82,47 @@ public interface Measurable {
 
 ```
 
+---
+#  Converting from Classes to Interfaces
+- It is legal to convert from the BankAccount type to the Measurable type. In general, you can convert from a class type to the type of any interface that the class implements. For example,
+```java
+
+BankAccount account = new BankAccount(1000); 
+Measurable meas = account; // OK
+
+```
+
+# Casting from Interfaces to Classes
+- Consider this method that returns the object with the larger measure:
+```java
+public static Measurable larger(Measurable obj1, Measurable obj2) {
+    if (obj1.getMeasure() > obj2.getMeasure()) {
+        return obj1; 
+    }else{
+        return obj2;
+    }
+}
+
+/*
+ The larger method returns the object with the larger measure, as a Measurable reference. It has no choice––it does not know the exact type of the object. Let’s use the method:
+ */
+Country uruguay = new Country("Uruguay", 176220); 
+Country thailand = new Country("Thailand", 513120); 
+Measurable max = larger(uruguay, thailand); 
+
+/* 
+Now what can you do with the max reference? 
+You know it refers to a Country object, but the compiler doesn’t. 
+For example, you cannot call the getName method:
+ */
+String countryName = max.getName(); // Error
+/*
+That call is an error, because the Measurable type has no getName method.
+However, as long as you are absolutely sure that max refers to a Country object, 
+you can use the cast notation to convert its type back: 
+ */
+Country maxCountry = (Country) max;
+String name = maxCountry.getName();
+
+```
+
