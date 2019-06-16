@@ -13,7 +13,10 @@ The Comparable interface has a single method:
  */
 
 /* 
-Since all Comparable objects have the compareTo method, the java.util.Arrays .sort(Object[]) method in the Java API uses the compareTo method to compare and sorts the objects in an array, provided that the objects are instances of the Comparable interface.
+Since all Comparable objects have the compareTo method, 
+the java.util.Arrays .sort(Object[]) method in the Java API 
+uses the compareTo method to compare and sorts the objects in an array, 
+provided that the objects are instances of the Comparable interface.
  */
 /*
     You cannot use the sort method to sort an array of Rectangle objects, 
