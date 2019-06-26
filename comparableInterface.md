@@ -46,6 +46,7 @@ public class ComparableRectangle extends Rectangle implements Comparable<Compara
 
 ```
 # example:
+- since BankAccount implements Comparable, in the main method we can call sort
 ```java
 /**
    A bank account has a balance that can be changed by 
@@ -97,7 +98,8 @@ public class ComparableTester
       accounts[0] = new BankAccount(10000);
       accounts[1] = new BankAccount(0);
       accounts[2] = new BankAccount(2000);      
-      Arrays.sort(accounts);   // here can call the .sort method, since BankAccount implements Comparable
+      Arrays.sort(accounts);   
+      // here can call the .sort method, since BankAccount implements Comparable
       for (int i = 0; i < accounts.length; i++)
       {
 	 System.out.print(accounts[i].getBalance() + " ");
