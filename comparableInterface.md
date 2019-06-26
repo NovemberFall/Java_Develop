@@ -44,9 +44,69 @@ public class ComparableRectangle extends Rectangle implements Comparable<Compara
         }
 }
 
-
 ```
+# example:
+```java
+/**
+   A bank account has a balance that can be changed by 
+   deposits and withdrawals.
+*/
+public class BankAccount implements Comparable
+{  
+   private double balance;
 
+   public BankAccount()
+   {   
+      balance = 0;
+   }
+
+   public BankAccount(double initialBalance)
+   {   
+      balance = initialBalance;
+   }
+
+   public void deposit(double amount)
+   {  
+      balance = balance + amount;
+   }
+
+   public void withdraw(double amount)
+   {   
+      balance = balance - amount;
+   }
+
+   public double getBalance()
+   {   
+      return balance;
+   }
+
+   public int compareTo(Object otherObject)
+   {
+      BankAccount other = (BankAccount) otherObject;
+      if (balance < other.balance) { return -1; }
+      if (balance > other.balance) { return 1; }
+      return 0;
+   }
+}
+
+public class ComparableTester
+{
+   public static void main(String[] args)
+   {
+      BankAccount[] accounts = new BankAccount[3];
+      accounts[0] = new BankAccount(10000);
+      accounts[1] = new BankAccount(0);
+      accounts[2] = new BankAccount(2000);      
+      Arrays.sort(accounts);   // here can call the .sort method, since BankAccount implements Comparable
+      for (int i = 0; i < accounts.length; i++)
+      {
+	 System.out.print(accounts[i].getBalance() + " ");
+      }
+      System.out.println();
+      System.out.println("Expected: 0.0 2000.0 10000.0");
+   }
+}
+```
 
 
 
