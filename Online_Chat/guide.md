@@ -1,8 +1,8 @@
-# Frame 
-###chatClient1 pack()  method
+### `Frame`
+### chatClient1 pack()  method
 *Causes this Window to be sized to fit the preferred size and layouts of its subcomponents.*
 
-###chatClient2 
+### chatClient2 
 *This version, may close the window*
 
 ```java
@@ -20,7 +20,7 @@
     });
 ```
 
-### chatClient3
+### `chatClient3`
 *add a inner class*
 ```java
  private class TextFieldListener implements ActionListener{
@@ -40,7 +40,7 @@
 ```
 *tf.setText(""); can reset the string to be null*
 
-### chatClient4
+### `chatClient4`
 *DataInputStream && DataOutputStream*
 ```java
    try{   //chatServer

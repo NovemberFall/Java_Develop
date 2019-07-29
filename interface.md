@@ -1,11 +1,11 @@
-# An interface type is similar to a class, but there are several important differences:
+### `An interface type is similar to a class, but there are several important differences:`
 - An interface type doesn't have instance variables
 - Methods in an interface must be abstract(that is, without an implementation) 
 - All methods in an interface type are automatically public
 - An interface type has no constructor. Interface are not classes, and you cannot construct objects of an interface type.
 
 
-# Implementing an Interface Type:
+### `Implementing an Interface Type:`
 ```java
 public class BankAccount implements Measurable
 {
@@ -25,7 +25,7 @@ Measurable obj = new BankAccount();  //OK
 
 
 ---
-# A class can implement more than one interface, for example
+### `A class can implement more than one interface, for example`
 ```java
 
 public class Country implements Measurable, Named
@@ -37,7 +37,7 @@ public interface Named {
 ```
 
 ---
-# Constants in Interfaces
+### `Constants in Interfaces`
 - Interfaces cannot have instance variables, but it is legal to specify constants. When declaring a constant in an interface, you can (and should) omit the reserved words public static final, because all variables in an interface are automatically public static final. For example,
 ```java
 public interface Named{
@@ -47,7 +47,7 @@ public interface Named{
 ```
 
 ---
-# Static Methods in Interfaces
+### `Static Methods in Interfaces`
 - Before Java 8, all methods in an interface had to be abstract. Java 8 allows static methods in interfaces that work exactly like static methods in classes. A static method of an interface does not operate on objects, and its purpose should relate to the interface that contains it.
 ```java
 public interface Measurable
@@ -72,7 +72,7 @@ double meanArea = Measurable.average(countries);
 ```
 
 ---
-# default metonds
+### `default metonds`
 ### A default method is a non-static method in an interface that has an implementation. A class that implements the method either inherits the default behavior or overrides it. By providing default methods in an interface, it is less work to define a class that implements an interface.
 *For example, the Measurable interface can declare getMeasure as a default method:*
 ```java
@@ -83,7 +83,7 @@ public interface Measurable {
 ```
 
 ---
-#  Converting from Classes to Interfaces
+###  `Converting from Classes to Interfaces`
 - It is legal to convert from the BankAccount type to the Measurable type. In general, you can convert from a class type to the type of any interface that the class implements. For example,
 ```java
 
@@ -92,7 +92,7 @@ Measurable meas = account; // OK
 
 ```
 
-# Casting from Interfaces to Classes
+### `Casting from Interfaces to Classes`
 - Consider this method that returns the object with the larger measure:
 ```java
 public static Measurable larger(Measurable obj1, Measurable obj2) {

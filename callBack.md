@@ -1,7 +1,7 @@
 # Using Interfaces for Callbacks
 
 - When collecting rectangles, we might give it a method for computing the area of a rectangle. When collecting cars, we might give it a method for getting the car’s price.
--
+
 - Such a method is called a **callback**. A callback is a mechanism for bundling up a block of code so that it can be invoked at a later time.
 
 ```java
