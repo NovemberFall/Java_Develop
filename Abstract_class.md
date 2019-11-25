@@ -38,6 +38,24 @@ public abstract class SelectableShape implements SceneShape {
 ```java
 SelectableShape shape = new HouseShape(); // OK
 ```
+- An `abstract class` is somewhere between an `interface type` and a `concrete class`
+- `Abstract classes` can have instance fields and methods:
+    1. You always want to move as much `common functionality` as possible into the superclass, whether or not it is abstract. 
+    2. For example, the `SelectableShape` class is an abstract class. But that doesn't mean it can't have fields or methods.
+---
+- Abstract classes have an advantage over interface types: **they can define common behavior**
+- But they also have a severe disadvantage: **A class can only extend one abstract class**, but it can implement several different interface types
+        - For that reason, we have both a `SceneShape` interface type and a `SelectableShape` class
+- The `SelectableShape` is a service for classes that wish to implement the `SceneShape` interface type
+
+- The Java library has a number of "interface type/abstract class" pairs, such as:
+    - **Collection/AbstractCollection** 
+    - **ListModel/AbstractListModel**
+- It would be a good idea to follow that `naming convention` and rename the `SelectableShape` class into `AbstractShape`
+
+
+
+
 
 
 
