@@ -35,6 +35,35 @@
     - We inherit from the `Exception` class but not from `RuntimeException`
 ![](img/2019-11-25-11-42-21.png)
 ---
+![](img/2019-11-25-11-43-32.png)
+---
+
+### Assignment
+- Start with the following class.
+```java
+public class BankAccount
+{
+    public void deposit(double amount) { balance += amount; }
+    public void withdraw(double amount) { balance -= amount; }
+    public double getBalance() { return balance; }
+    private double balance;
+} 
+```
+- Define a subclass `CheckingAccount` with a constructor `CheckingAccount(double initialBalance)` and a method void `deductFees()` that deducts the fees and resets the transaction count:
+    - A checking account is just like a bank account, except that there is a service charge for deposits and withdrawals 
+    - Each month, the first five transactions are free 
+    - All further transactions cost $1 
+- You will also need to redefine the `deposit` and `withdraw` methods
+- Form subclasses `HourlyEmployee` and `SalariedEmployee` of the `Employee` class.
+- Provide constructors:
+```java
+HourlyEmployee(String aName, double anHourlySalary)
+SalariedEmployee(String aName, double anAnnualSalary)
+```
+- Add a method `getWeeklySalary`
+- Assume that hourly employees work 40 hours per week, and that salaried employees are paid 1/52 of their annual salary every week.
+
+
 
 
 
