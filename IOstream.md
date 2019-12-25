@@ -274,6 +274,18 @@ public class FileMethodDemo4 {
         File dir = new File("src/");
 
         File[] files = dir.listFiles(new FilenameFilterByJava());
+
+/* listFiles源码
+        public File[] listFiles(FilenameFilter filter) {
+            String ss[] = list();
+            if (ss == null) return null;
+            ArrayList<File> files = new ArrayList<>();
+            for (String s : ss)
+                if ((filter == null) || filter.accept(this, s))
+                    files.add(new File(s, this));
+            return files.toArray(new File[files.size()]);
+        }
+*/        
         for (File file : files) {
             System.out.println(file.getName());
         }
@@ -281,4 +293,61 @@ public class FileMethodDemo4 {
 }
 ```
 ![](img/2019-12-25-12-52-41.png)
+---
+
+## refactoring codes, 2nd way to implement filter
+- create a class `FilenameFilterBySuffix`
+```java
+package com.tom.io.file;
+
+import java.io.File;
+import java.io.FilenameFilter;
+
+public class FilenameFilterBySuffix implements FilenameFilter{
+    private String suffix;
+
+    public FilenameFilterBySuffix(String suffix) {
+        super();
+        this.suffix = suffix;
+    }
+
+    @Override
+    public boolean accept(File dir, String name) {
+        return name.endsWith(suffix);
+    }
+}
+```
+-
+```java
+
+import com.tom.io.file.FilenameFilterBySuffix;
+
+import java.io.File;
+
+public class FileMethodDemo04 {
+    public static void main(String[] args) {
+        //获取目录中的内容，但是只要java文件
+        File dir = new File("src/");
+
+        File[] files = dir.listFiles(new FilenameFilterBySuffix(".txt"));
+/* listFiles源码
+        public File[] listFiles(FilenameFilter filter) {
+            String ss[] = list();
+            if (ss == null) return null;
+            ArrayList<File> files = new ArrayList<>();
+            for (String s : ss)
+                if ((filter == null) || filter.accept(this, s))
+                    files.add(new File(s, this));
+            return files.toArray(new File[files.size()]);
+        }
+*/
+
+        for (File file : files) {
+            System.out.println(file.getName());
+        }
+    }
+}
+```
+![](img/2019-12-25-13-15-22.png)
+
 
