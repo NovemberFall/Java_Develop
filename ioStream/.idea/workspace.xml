@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/FileMethodDemo5.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="28" />
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,18 +237,18 @@
       <workItem from="1577264364180" duration="1862000" />
       <workItem from="1577296365347" duration="8571000" />
       <workItem from="1577595316073" duration="166000" />
-      <workItem from="1577595498995" duration="3295000" />
+      <workItem from="1577595498995" duration="3484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13894000" />
+    <option name="totallyTimeSpent" value="14083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1031" y="77" width="1017" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22358975" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22358975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -257,7 +257,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297062" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31229597" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31229597" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,7 +391,7 @@
     <entry file="file://$PROJECT_DIR$/src/FileMethodDemo5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="28" />
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
