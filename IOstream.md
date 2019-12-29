@@ -349,5 +349,43 @@ public class FileMethodDemo04 {
 }
 ```
 ![](img/2019-12-25-13-15-22.png)
+---
 
+## 过滤📁的过滤器
+- create a class
+```java
+package com.tom.io.file;
+import java.io.File;
+import java.io.FileFilter;
+
+/**
+ * 过滤📁的过滤器
+ */
+public class FileFilterByDiretory implements FileFilter {
+    @Override
+    public boolean accept(File pathname) {
+        return pathname.isDirectory();
+    }
+}
+```
+- implements interface `FileFilter`
+- override `accept` method, which check if it is directory
+-
+- create a class FileMethodDemo5 to filter out all directories
+```java
+import com.tom.io.file.FileFilterByDiretory;
+import java.io.File;
+public class FileMethodDemo5 {
+    public static void main(String[] args) {
+        File dir = new File("src/");
+
+        File[] files = dir.listFiles(new FileFilterByDiretory());
+
+        for (File file : files) {
+            System.out.println(file);
+        }
+    }
+}
+```
+![](img/2019-12-28-22-40-35.png)
 
