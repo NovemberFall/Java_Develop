@@ -16,12 +16,14 @@ public class FileTest {
     }
 
     private static void listAll(File dir) {
+        System.out.println("directory: " + dir);
         File[] files = dir.listFiles();
         for (File file : files) {
             if (file.isDirectory()) {//if current file is directory, continue traversing
                 listAll(file);
+            }else{
+                System.out.println("file: " + file.getName());
             }
-            System.out.println(file.getName());
         }
     }
 }
