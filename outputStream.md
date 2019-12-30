@@ -399,6 +399,85 @@ public class CopyFileTest {
 ---
 
 ### 自定义缓冲数组复制文件
+### Note: 前面提过，所有文件都是字节形式，包括`.mp3 .png .jpg .mp4 .mkv`, 这就意味着接下来我们可以用所学到的技术来实现复制.mp3
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+/**
+ * CopyFileByBuffer
+ */
+public class CopyFileByBuffer {
+
+    public static void main(String[] args) throws IOException {
+        /**
+         * 复制文件
+         */
+        //1.明确源文件，和目的文件
+        File srcFile = new File("../tempfile/1.mp3");
+        File destFile = new File("../tempfile/copy_1.mp3");
+
+        //2.明确字节输入流和源相关联，输出流和目的相连
+        FileInputStream fis = new FileInputStream(srcFile);
+        FileOutputStream fos = new FileOutputStream(destFile);
+
+        //3. 定义一个缓冲区
+        byte[] buffer = new byte[1024];
+
+        int len = 0;
+        while((len = fis.read(buffer))!=-1){
+            fos.write(buffer, 0, len);//将数组中中的指定长度的数据写入到输出流中
+        }
+
+        //4.close
+        fos.close();
+        fis.close();
+    }
+}
+```
+![](img/2019-12-29-16-24-16.png)
+---
+
+### 同时，我们也可以用非缓冲模式，进行复制，利用前面提到的方法
+```java
+//复制 .mp3
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+/**
+ * CopyFileTest
+ */
+public class CopyFileTest {
+
+    public static void main(String[] args) throws IOException {
+        /**
+         * 复制文件
+         */
+        //1.明确源文件，和目的文件
+        File srcFile = new File("../tempfile/1.mp3");
+        File destFile = new File("../tempfile/copy_2.mp3");
+
+        //2.明确字节输入流和源相关联，输出流和目的相连
+        FileInputStream fis = new FileInputStream(srcFile);
+        FileOutputStream fos = new FileOutputStream(destFile);
+
+        //3. 使用输入流的读取方法读取字节，并将字节写入到目的中
+        int ch=0;
+        while((ch=fis.read())!=-1){
+            fos.write(ch);
+        }
+
+        //4.close
+        fos.close();
+        fis.close();
+    }
+}
+```
+![](img/2019-12-29-16-29-06.png)
 
 
 
