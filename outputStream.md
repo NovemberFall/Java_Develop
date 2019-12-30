@@ -160,7 +160,7 @@ public class FileInputStreamDemo {
     public static void main(String[] args) throws IOException {
         File file = new File("../tempfile/file.txt");
 
-        //创建一个字节输入流对象,必须明确数据源，其实就是创建字节读取流和数据源相关
+        //创建一个字节输入流对象,必须明确数据源，其实就是创建字节读取流和数据源相关联
         FileInputStream fis = new FileInputStream(file);
 
         //读取数据 使用read(); 一次读一个字节
@@ -180,7 +180,7 @@ public class FileInputStreamDemo {
     public static void main(String[] args) throws IOException {
         File file = new File("../tempfile/file.txt");
 
-        //创建一个字节输入流对象,必须明确数据源，其实就是创建字节读取流和数据源相关
+        //创建一个字节输入流对象,必须明确数据源，其实就是创建字节读取流和数据源相关联
         FileInputStream fis = new FileInputStream(file);
 
         //读取数据 使用read(); 一次读一个字节
@@ -206,7 +206,7 @@ public class FileInputStreamDemo {
     public static void main(String[] args) throws IOException {
         File file = new File("../tempfile/file.txt");
 
-        //创建一个字节输入流对象,必须明确数据源，其实就是创建字节读取流和数据源相关
+        //创建一个字节输入流对象,必须明确数据源，其实就是创建字节读取流和数据源相关联
         FileInputStream fis = new FileInputStream(file);
         
         int ch=0;
@@ -357,6 +357,48 @@ public class FileInputStreamDemo2 {
 ---
 
 
+### 复制文件
+- create `CopyFileTest.java`
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+/**
+ * CopyFileTest
+ */
+public class CopyFileTest {
+
+    public static void main(String[] args) throws IOException {
+        /**
+         * 复制文件
+         */
+        //1.明确源文件，和目的文件
+        File srcFile = new File("../tempfile/file.txt");
+        File destFile = new File("../tempfile/copy_file.txt");
+
+        //2.明确字节输入流和源相关联，输出流和目的相连
+        FileInputStream fis = new FileInputStream(srcFile);
+        FileOutputStream fos = new FileOutputStream(destFile);
+
+        //3. 使用输入流的读取方法读取字节，并将字节写入到目的中
+        int ch=0;
+        while((ch=fis.read())!=-1){
+            fos.write(ch);
+        }
+
+        //4.close
+        fos.close();
+        fis.close();
+    }
+}
+```
+![](img/2019-12-29-16-01-35.png)
+![](img/2019-12-29-16-03-51.png)
+---
+
+### 自定义缓冲数组复制文件
 
 
 
