@@ -17,29 +17,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/introduction/main3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-              <folding>
-                <element signature="e#1268#1269#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,6 +35,8 @@
         <option value="$PROJECT_DIR$/src/introduction/main2.java" />
         <option value="$PROJECT_DIR$/src/introduction/Main.java" />
         <option value="$PROJECT_DIR$/src/introduction/main3.java" />
+        <option value="$PROJECT_DIR$/src/introduction/main4.java" />
+        <option value="$PROJECT_DIR$/src/lambda_NestedBlock/Main.java" />
       </list>
     </option>
   </component>
@@ -94,12 +74,6 @@
               <item name="lambdaExpression" type="b2602c69:ProjectViewProjectNode" />
               <item name="lambdaExpression" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lambdaExpression" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lambdaExpression" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="introduction" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -189,23 +163,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584400768496</updated>
-      <workItem from="1584400771145" duration="9384000" />
+      <workItem from="1584400771145" duration="10357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9384000" />
+    <option name="totallyTimeSpent" value="10357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="997" y="87" width="1051" height="1017" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19402985" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19326065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32893288" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -228,7 +201,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="9" visible="true" weight="0.30822596" />
+      <window_info anchor="right" id="Run" order="9" weight="0.30822596" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,19 +233,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/introduction/main3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        <state>
+          <caret selection-end-line="85" />
           <folding>
-            <element signature="e#1268#1269#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#1842#1843#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2163#2164#0" expanded="true" />
+            <element signature="e#2193#2194#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/introduction/main4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#1842#1843#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2163#2164#0" expanded="true" />
+            <element signature="e#2193#2194#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lambda_NestedBlock/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-348">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#2125#2126#0" expanded="true" />
+            <element signature="e#2157#2158#0" expanded="true" />
+            <element signature="e#2192#2193#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
+            <element signature="e#2253#2254#0" expanded="true" />
+            <element signature="e#2280#2281#0" expanded="true" />
+            <element signature="e#2307#2308#0" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
           </folding>
         </state>
       </provider>
