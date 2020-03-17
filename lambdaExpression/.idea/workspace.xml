@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2095c8b-37d3-4ece-b058-139c89a1397d" name="Default Changelist" comment="" />
+    <list default="true" id="f2095c8b-37d3-4ece-b058-139c89a1397d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/introduction/main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/introduction/main3.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +21,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/introduction/main3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="271">
+              <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
               <folding>
+                <element signature="e#1268#1269#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
                 <element signature="e#503#504#0" expanded="true" />
                 <element signature="e#535#536#0" expanded="true" />
                 <element signature="e#570#571#0" expanded="true" />
@@ -64,9 +69,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="997" />
-    <option name="y" value="68" />
+    <option name="y" value="87" />
     <option name="width" value="1051" />
-    <option name="height" value="1036" />
+    <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -104,6 +109,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -111,6 +117,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,15 +189,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584400768496</updated>
-      <workItem from="1584400771145" duration="6078000" />
+      <workItem from="1584400771145" duration="9384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6078000" />
+    <option name="totallyTimeSpent" value="9384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="997" y="68" width="1051" height="1036" extended-state="0" />
+    <frame x="997" y="87" width="1051" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -200,7 +207,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.19402985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32943678" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32893288" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -227,6 +234,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/introduction/main2.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -248,9 +260,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/introduction/main3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="271">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
           <folding>
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
             <element signature="e#503#504#0" expanded="true" />
             <element signature="e#535#536#0" expanded="true" />
             <element signature="e#570#571#0" expanded="true" />
